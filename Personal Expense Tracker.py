@@ -55,7 +55,7 @@ def summary(period):
         elif period == "monthly" and e_date.month == today.month:
             total += e["Amount"]
 
-    print(f"💰 {period.capitalize()} Expense: ₹{total}")
+    print(f" {period.capitalize()} Expense: ₹{total}")
 
 
 def top_categories():
@@ -122,9 +122,10 @@ def menu():
         elif choice == "6":
             visualize()
         elif choice == "7":
-            print("👋 Exiting... Goodbye!")
+            print(" Exiting")
             break
         else:
             print(" Invalid choice")
 
 menu()
+
